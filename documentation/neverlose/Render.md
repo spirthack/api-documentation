@@ -282,7 +282,12 @@ print("X size: "..tostring(icon_size.x).." | Y size: "..tostring(icon_size.y))
 | :--- | :--- | :--- | :--- |
 | name | string | Font name | + |
 | size | int | Font size | + |
-| flags | FontFlags | Font flags| - |
+| flags | string table | Font flags| - |
+
+### Font Flags
+b = bold
+i = italic
+r = no anti-aliasing
 
 ### Return value:
 
@@ -293,12 +298,7 @@ print("X size: "..tostring(icon_size.x).." | Y size: "..tostring(icon_size.y))
 ### Usage:
 
 ```lua
-local flags = FontFlags.new()
-flags.antialiasing = false
-flags.bold = false
-flags.italic = false
-
-verdana = Render.InitFont("Verdana", 11, flags)
+verdana = Render.InitFont("Verdana", 11, {'b', 'i', 'r'})
 
 Cheat.RegisterCallback("draw", function()
     Render.Text("Hello world, it's me", Vector2.new(10.0, 15.0), Color.new(1.0, 1.0, 1.0), 11, verdana)
