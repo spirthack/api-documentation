@@ -28,5 +28,4 @@ Feel free to contact us:
 - [Issues](https://github.com/neverlosecc/api-documentation/issues)
 - [Pull Requests](https://github.com/neverlosecc/api-documentation/pulls)
 - Personal messages to any of documentation maintainer:
-  - es3n1n#3573
   - elleqt#9945
