@@ -15,15 +15,16 @@
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| result | string | Javascript code result |
+| result | function | - |
 
 ```lua
-Panorama.Exec([[
-    $.Msg("Stopping matchmaking");
-    LobbyAPI.StopMatchmaking();
-]], "CSGOMainMenu")
-local exec = Panorama.Exec("MyPersonaAPI.GetXuid()")
-print(exec)
+local get_my_steamid = Panorama.LoadString([[
+    return MyPersonaAPI.GetXuid()
+]])
+
+local my_steam = get_my_steamid()
+
+print("LoadString", my_steam) -- returns 765xxxx..
 ```
 
 ## Open
@@ -35,6 +36,8 @@ print(exec)
 | result | PanoramaHandle | Panorama opened handle |
 
 ```lua
-local handle = Panorama.Open()
-print(handle.GameStateAPI.GetLocalPlayerXuid())
+local panorama_handle = Panorama.Open()
+local my_steam_from_handle = panorama_handle.MyPersonaAPI.GetXuid()
+
+print("Open", my_steam_from_handle) -- returns 765xxxx..
 ```
