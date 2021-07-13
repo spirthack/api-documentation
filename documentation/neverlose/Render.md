@@ -110,6 +110,8 @@ Render.GradientBoxFilled(Vector2.new(100, 100), Vector2.new(300, 300), Color.new
 | seg | int | Amount of segments | + |
 | clr | Color | Circlecolor | + |
 | th  | float | Circle thickness | - |
+| start  | int (degree) | Circle start degree | - |
+| th  | int (degree) | Circle end degree | - |
 
 ### Usage:
 
@@ -121,37 +123,19 @@ Render.Circle(Vector2.new(0.0, 0.0), 2.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
 
 ### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| pos | Vector2 | Center of the circle |
-| rad | float | Radius |
-| seg | int | Amount of segments |
-| clr | Color | Circlecolor |
-
-### Usage:
-
-```lua
-Render.CircleFilled(Vector2.new(0.0, 0.0), 2.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
-```
-
-## CirclePart
-
-### Parameters:
-
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
 | pos | Vector2 | Center of the circle | + |
 | rad | float | Radius | + |
 | seg | int | Amount of segments | + |
 | clr | Color | Circlecolor | + |
-| start | float | First Radian | + |
-| end | float | Last Radian | + |
-| th | float | Thickness | - |
+| start  | int (degree) | Circle start degree | - |
+| th  | int (degree) | Circle end degree | - |
 
 ### Usage:
 
 ```lua
-Render.CirclePart(Vector2.new(110.0, 110.0), 30.0, 58, Color.new(1.0, 1.0, 1.0, 1.0), math.rad(0), math.rad(280), 5.0)
+Render.CircleFilled(Vector2.new(0.0, 0.0), 2.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
 ```
 
 ## Circle3D
