@@ -6,7 +6,6 @@
       - [Types](documentation/neverlose/types/README.md)
          - [ActiveBind](documentation/neverlose/types/ActiveBind.md)
          - [CheatVar](documentation/neverlose/types/CheatVar.md)
-         - [FontFlags](documentation/neverlose/types/FontFlags.md)
          - [RagebotShot](documentation/neverlose/types/RagebotShot.md)
          - [RegisteredShot](documentation/neverlose/types/RegisteredShot.md)
       - [AntiAim](documentation/neverlose/AntiAim.md)
