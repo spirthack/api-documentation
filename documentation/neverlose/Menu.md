@@ -252,13 +252,14 @@ end)
 | value | CheatVar | Cheatvar for MultiCombo |
 
 {% hint style="info" %}
-To retrieve/set values use CheatVar:GetBool(int el_idx), CheatVar:SetBool(int el_idx, bool value)
+To retrieve/set values use CheatVar:Get(int el_idx), CheatVar:Set(int el_idx, bool value)
 {% endhint %}
 
 ```lua
 local combo = Menu.MultiCombo("Neverlose", "MultiCumbo", {"Element 1", "Element 2", "Element 3"}, 0, "Tooltip", function(val)
     print(val)
 end)
+combo:SetBool(1, true)
 ```
 
 ## TextBox

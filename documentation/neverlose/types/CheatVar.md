@@ -60,11 +60,11 @@ var:SetColor(Color.new(1, 1, 1, 1))
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| value | function | Callback | + |
+| func | function | Callback | + |
 
 ```lua
-var:RegisterCallback(function()
-    print("callback!")
+var:RegisterCallback(function(val)
+    print(val)
 end)
 ```
 
@@ -74,7 +74,7 @@ end)
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| value | bool | Item visibility | + |
+| visibility | bool | Item visibility | + |
 
 ```lua
 var:SetVisible(false)
@@ -92,7 +92,7 @@ DestroyItem was previously incorrectly listed here. It has been moved to to the 
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| value | string | Tooltip content | + |
+| tooltip | string | Tooltip content | + |
 
 ```lua
 var:SetTooltip("Tooltip")
@@ -104,7 +104,7 @@ var:SetTooltip("Tooltip")
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| Cheatvar name | string | Returns control's name |
+| name | string | Returns CheatVar's name |
 
 ```lua
 local bodyAim = Menu.FindVar("Aimbot", "Ragebot", "Misc", "Body Aim")
@@ -117,9 +117,9 @@ print(name)
 
 ### Parameters:
 
-| Name | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| new combo items | table | Combo Items | + |
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| elements | table | Combo Items |
 
 ```lua
 local combo = Menu.Combo("Neverlose", "Combo", {"Element 1", "Element 2", "Element 3"}, 0, "Tooltip")
@@ -134,7 +134,7 @@ end)
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| Combo elements | table | Returns all elements in combo |
+| elements | table | Returns all elements in combo |
 
 ```lua
 local bodyAim = Menu.FindVar("Aimbot", "Ragebot", "Misc", "Body Aim")
