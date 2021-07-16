@@ -272,6 +272,7 @@ print("X size: "..tostring(icon_size.x).." | Y size: "..tostring(icon_size.y))
 | flags | string table | Font flags| - |
 
 ### Font Flags
+
 b = bold
 i = italic
 r = no anti-aliasing
