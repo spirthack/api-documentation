@@ -1,14 +1,14 @@
 # Synced animated clantag changer
 
-> Author: [@es3n1n](https://github.com/es3n1n)  
+> Author: [@es3n1n](https://github.com/es3n1n)
 >
-> Name: `Synced animated clantag changer`  
+> Name: `Synced animated clantag changer`
 >
 > Description: `Changes your clantag`
 
 ```lua
 -- @region: engine stuff
-local _set_clantag = ffi.cast('int(__fastcall*)(const char*, const char*)', utils.PatternScan('engine.dll', '53 56 57 8B DA 8B F9 FF 15'))
+local _set_clantag = ffi.cast('int(__fastcall*)(const char*, const char*)', Utils.PatternScan('engine.dll', '53 56 57 8B DA 8B F9 FF 15'))
 local _last_clantag = nil
 local set_clantag = function(v)
   if v == _last_clantag then return end
@@ -49,9 +49,9 @@ local tag = build_tag('BoberHook')
 
 -- @note: es3n1n: you can change from draw to whatever you want
 local clantag_animation = function()
-    if not g_EngineClient:IsConnected() then return end
-    
-    local netchann_info = g_EngineClient:GetNetChannelInfo()
+    if not EngineClient.IsConnected() then return end
+
+    local netchann_info = EngineClient.GetNetChannelInfo()
     if netchann_info == nil then return end
 
     local latency = netchann_info:GetLatency(0) / g_GlobalVars.interval_per_tick
@@ -62,6 +62,5 @@ local clantag_animation = function()
 end
 
 
-cheat.RegisterCallback("draw", clantag_animation)
-
+Cheat.RegisterCallback("draw", clantag_animation)
 ```

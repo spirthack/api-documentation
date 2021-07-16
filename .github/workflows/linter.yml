@@ -1,0 +1,23 @@
+on:
+  push:
+    branches:
+      - master
+      - alpha
+#  pull_request:
+#    branches:
+#      - master
+
+name: 'Markdown linter'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    name: lint
+    steps:
+      - name: "Check out code"
+        uses: actions/checkout@v2
+
+      - name: "Run Markdown linter"
+        uses: bewuethr/mdl-action@v1
+        with:
+          style-file: .github/workflows/linter-config.rb

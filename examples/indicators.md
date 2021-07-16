@@ -1,8 +1,8 @@
 # Keybind Indicators
 
-> Author: [@elleqt](https://github.com/elleqt)  
+> Author: [@elleqt](https://github.com/elleqt)
 >
-> Name: `Indicators`  
+> Name: `Indicators`
 >
 > Description: `Bind indicator`
 
@@ -13,8 +13,8 @@ local color_inactive    = Color.new(1, 0, 0, 1) -- The color we use for renderin
 local render_position   = Vector2.new(25, 550)  -- The position our indicators will be rendered at
 
 local on_draw = function()
-    local local_player_index    = g_EngineClient:GetLocalPlayer()                   -- Get our local player index
-    local local_player          = g_EntityList:GetClientEntity(local_player_index)  -- Get the entity object for our local player
+    local local_player_index    = EngineClient.GetLocalPlayer()                   -- Get our local player index
+    local local_player          = EntityList.GetClientEntity(local_player_index)  -- Get the entity object for our local player
 
     if not local_player then
         return -- No real point rendering keybinds if the local player is invalid
@@ -42,16 +42,16 @@ local on_draw = function()
             render_color = color_active     --  The bind is active and we will be using the active color
         end
 
-        g_Render:Text(render_string, new_render_position, render_color, 24, true)       --  Actually render our string
+        Render.Text(render_string, new_render_position, render_color, 24, true)       --  Actually render our string
 
         render_offset = render_offset + 20  --  Offset our render position a bit
     end
 
-    local binds = cheat.GetBinds()
+    local binds = Cheat.GetBinds()
     for i = 1, #binds do --  Iterate over our binds...
         render_keybind(binds[i])   --  And handle them using our render_keybind function
     end
 end
 
-cheat.RegisterCallback("draw", on_draw) --  Set a callback on the "draw" event, now our function will be executed every time it's called
+Cheat.RegisterCallback("draw", on_draw) --  Set a callback on the "draw" event, now our function will be executed every time it's called
 ```
