@@ -2,7 +2,7 @@
 
 ## Functions
 
-## Exec
+## LoadString
 
 ### Parameters:
 

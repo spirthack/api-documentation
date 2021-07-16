@@ -98,6 +98,21 @@ DestroyItem was previously incorrectly listed here. It has been moved to to the 
 var:SetTooltip("Tooltip")
 ```
 
+## GetName
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| Cheatvar name | string | Returns control's name |
+
+```lua
+local bodyAim = Menu.FindVar("Aimbot", "Ragebot", "Misc", "Body Aim")
+local name = bodyAim:GetName()
+
+print(name)
+```
+
 ## UpdateList
 
 ### Parameters:
@@ -122,7 +137,7 @@ end)
 | Combo elements | table | Returns all elements in combo |
 
 ```lua
-local bodyAim = Menu.FindVar("Aimbot", "Ragebot", "Accuracy", "Body Aim")
+local bodyAim = Menu.FindVar("Aimbot", "Ragebot", "Misc", "Body Aim")
 local list = bodyAim:GetList()
 
 for _, item in ipairs(list) do

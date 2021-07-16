@@ -21,7 +21,9 @@
 | value | CheatVar\* | CheatVar value |
 
 ```lua
-local var = Menu.FindVar("Aimbot", "Ragebot", "Accuracy", "Hit Chance")
+local var = Menu.FindVar("Aimbot", "Ragebot", "Accuracy", "Hit Chance", function(val)
+    print(val)
+end)
 ```
 
 ## Switch
@@ -30,10 +32,11 @@ local var = Menu.FindVar("Aimbot", "Ragebot", "Accuracy", "Hit Chance")
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| group | string | Default value | + |
-| name | string | Default value | + |
+| group | string | Group | + |
+| name | string | Name | + |
 | def_val | bool | Default value | + |
-| tooltip | string | Default tooltip | - |
+| tooltip | string | Tooltip | - |
+| callback | function | Change callback | - |
 
 ### Return value:
 
@@ -42,7 +45,9 @@ local var = Menu.FindVar("Aimbot", "Ragebot", "Accuracy", "Hit Chance")
 | value | CheatVar | Cheatvar for switch |
 
 ```lua
-local switch = Menu.Switch("Neverlose", "Switch", false, "Tooltip")
+local switch = Menu.Switch("Neverlose", "Switch", false, "Tooltip", function(val)
+    print(val)
+end)
 ```
 
 ## SwitchColor
@@ -51,11 +56,12 @@ local switch = Menu.Switch("Neverlose", "Switch", false, "Tooltip")
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| group | string | Default value | + |
-| name | string | Default value | + |
+| group | string | Group | + |
+| name | string | Name | + |
 | def_val | bool | Default value | + |
 | def_clr | Color | Default color | + |
-| tooltip | string | Default tooltip | - |
+| tooltip | string | Tooltip | - |
+| callback | function | Change callback | - |
 
 ### Return value:
 
@@ -64,7 +70,9 @@ local switch = Menu.Switch("Neverlose", "Switch", false, "Tooltip")
 | value | CheatVar | Cheatvar for switch |
 
 ```lua
-local switch = Menu.SwitchColor("Neverlose", "Switch", false, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
+local switch = Menu.SwitchColor("Neverlose", "Switch", false, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip", function(val)
+    print(val)
+end)
 ```
 
 ## SliderInt
@@ -77,8 +85,9 @@ local switch = Menu.SwitchColor("Neverlose", "Switch", false, Color.new(1.0, 1.0
 | name | string | Name | + |
 | def_val | int | Default value | + |
 | min | int | Minimal value | + |
-| max | int | Maxmial value | + |
-| tooltip | string | tooltip | - |
+| max | int | Maximum value | + |
+| tooltip | string | Tooltip | - |
+| callback | function | Change callback | - |
 
 ### Return value:
 
@@ -87,7 +96,9 @@ local switch = Menu.SwitchColor("Neverlose", "Switch", false, Color.new(1.0, 1.0
 | value | CheatVar | Cheatvar for slider |
 
 ```lua
-local sliderint = Menu.SliderInt("Neverlose", "Slider", 50, 0, 100, "Tooltip")
+local sliderint = Menu.SliderInt("Neverlose", "Slider", 50, 0, 100, "Tooltip", function(val)
+    print(val)
+end)
 ```
 
 ## SliderIntColor
@@ -100,9 +111,10 @@ local sliderint = Menu.SliderInt("Neverlose", "Slider", 50, 0, 100, "Tooltip")
 | name | string | Name | + |
 | def_val | int | Default value | + |
 | min | int | Minimal value | + |
-| max | int | Maxmial value | + |
+| max | int | Maximum value | + |
 | def_clr | Color | Color | - |
-| tooltip | string | tooltip | - |
+| tooltip | string | Tooltip | - |
+| callback | function | Change callback | - |
 
 ### Return value:
 
@@ -111,7 +123,9 @@ local sliderint = Menu.SliderInt("Neverlose", "Slider", 50, 0, 100, "Tooltip")
 | value | CheatVar | Cheatvar for slider |
 
 ```lua
-local sliderint = Menu.SliderIntColor("Neverlose", "Slider", 50, 0, 100, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
+local sliderint = Menu.SliderIntColor("Neverlose", "Slider", 50, 0, 100, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip", function(val)
+    print(val)
+end)
 ```
 
 ## SliderFloat
@@ -124,8 +138,9 @@ local sliderint = Menu.SliderIntColor("Neverlose", "Slider", 50, 0, 100, Color.n
 | name | string | Name | + |
 | def_val | float | Default value | + |
 | min | float | Minimal value | + |
-| max | float | Maxmial value | + |
-| tooltip | string | tooltip | - |
+| max | float | Maximum value | + |
+| tooltip | string | Tooltip | - |
+| callback | function | Change callback | - |
 
 ### Return value:
 
@@ -134,7 +149,9 @@ local sliderint = Menu.SliderIntColor("Neverlose", "Slider", 50, 0, 100, Color.n
 | value | CheatVar | Cheatvar for slider |
 
 ```lua
-local sliderfloat = Menu.SliderFloat("Neverlose", "Slider", 50.0, 0.0, 100.0, "Tooltip")
+local sliderfloat = Menu.SliderFloat("Neverlose", "Slider", 50.0, 0.0, 100.0, "Tooltip", function(val)
+    print(val)
+end)
 ```
 
 ## SliderFloatColor
@@ -147,9 +164,10 @@ local sliderfloat = Menu.SliderFloat("Neverlose", "Slider", 50.0, 0.0, 100.0, "T
 | name | string | Name | + |
 | def_val | float | Default value | + |
 | min | float | Minimal value | + |
-| max | float | Maxmial value | + |
+| max | float | Maximum value | + |
 | def_clr | Color | Color | + |
-| tooltip | string | tooltip | - |
+| tooltip | string | Tooltip | - |
+| callback | function | Change callback | - |
 
 ### Return value:
 
@@ -158,7 +176,9 @@ local sliderfloat = Menu.SliderFloat("Neverlose", "Slider", 50.0, 0.0, 100.0, "T
 | value | CheatVar | Cheatvar for slider |
 
 ```lua
-local sliderfloat = Menu.SliderFloatColor("Neverlose", "Slider", 50.0, 0.0, 100.0, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
+local sliderfloat = Menu.SliderFloatColor("Neverlose", "Slider", 50.0, 0.0, 100.0, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip", function(val)
+    print(val)
+end)
 ```
 
 ## Combo
@@ -172,6 +192,7 @@ local sliderfloat = Menu.SliderFloatColor("Neverlose", "Slider", 50.0, 0.0, 100.
 | elements | table | Elements | + |
 | def_value | int | Default value index | + |
 | tooltip | string | Tooltip | - |
+| callback | function | Change callback | - |
 
 ### Return value:
 
@@ -180,7 +201,9 @@ local sliderfloat = Menu.SliderFloatColor("Neverlose", "Slider", 50.0, 0.0, 100.
 | value | CheatVar | Cheatvar for combo |
 
 ```lua
-local combo = Menu.Combo("Neverlose", "Combo", {"Element 1", "Element 2", "Element 3"}, 0, "Tooltip")
+local combo = Menu.Combo("Neverlose", "Combo", {"Element 1", "Element 2", "Element 3"}, 0, "Tooltip", function(val)
+    print(val)
+end)
 ```
 
 ## ComboColor
@@ -195,6 +218,7 @@ local combo = Menu.Combo("Neverlose", "Combo", {"Element 1", "Element 2", "Eleme
 | def_value | int | Default value index | + |
 | def_clr | Color | Color | + |
 | tooltip | string | Tooltip | - |
+| callback | function | Change callback | - |
 
 ### Return value:
 
@@ -203,7 +227,9 @@ local combo = Menu.Combo("Neverlose", "Combo", {"Element 1", "Element 2", "Eleme
 | value | CheatVar | Cheatvar for combo |
 
 ```lua
-local combo = Menu.ComboColor("Neverlose", "Combo", {"Element 1", "Element 2", "Element 3"}, 0, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
+local combo = Menu.ComboColor("Neverlose", "Combo", {"Element 1", "Element 2", "Element 3"}, 0, Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip", function(val)
+    print(val)
+end)
 ```
 
 ## MultiCombo
@@ -217,6 +243,7 @@ local combo = Menu.ComboColor("Neverlose", "Combo", {"Element 1", "Element 2", "
 | elements | table | Values | + |
 | def_value | int | Default values | + |
 | tooltip | string | Tooltip | - |
+| callback | function | Change callback | - |
 
 ### Return value:
 
@@ -229,7 +256,9 @@ To retrieve/set values use CheatVar:GetBool(int el_idx), CheatVar:SetBool(int el
 {% endhint %}
 
 ```lua
-local combo = Menu.MultiCombo("Neverlose", "MultiCumbo", {"Element 1", "Element 2", "Element 3"}, 0, "Tooltip")
+local combo = Menu.MultiCombo("Neverlose", "MultiCumbo", {"Element 1", "Element 2", "Element 3"}, 0, "Tooltip", function(val)
+    print(val)
+end)
 ```
 
 ## TextBox
@@ -243,6 +272,7 @@ local combo = Menu.MultiCombo("Neverlose", "MultiCumbo", {"Element 1", "Element 
 | max_size | size_t | Max size | + |
 | def_value | string | Default value  | + |
 | tooltip | string | Tooltip | - |
+| callback | function | Change callback | - |
 
 ### Return value:
 
@@ -251,7 +281,9 @@ local combo = Menu.MultiCombo("Neverlose", "MultiCumbo", {"Element 1", "Element 
 | value | CheatVar | Cheatvar for textbox |
 
 ```lua
-local textbox = Menu.TextBox("Neverlose", "TextBox", 64, "Value", "Tooltip")
+local textbox = Menu.TextBox("Neverlose", "TextBox", 64, "Value", "Tooltip", function(val)
+    print(val)
+end)
 ```
 
 ## Text
@@ -276,6 +308,7 @@ Menu.Text("Neverlose", "Text")
 | group | string | Group | + |
 | name | string | Name | + |
 | tooltip | string | Tooltip | - |
+| callback | function | Click callback | - |
 
 ### Return value:
 
@@ -284,7 +317,9 @@ Menu.Text("Neverlose", "Text")
 | value | CheatVar | Cheatvar for button |
 
 ```lua
-local button = Menu.Button("Neverlose", "Test")
+local button = Menu.Button("Neverlose", "Test", function()
+    print("clicked!")
+end)
 ```
 
 ## ColorEdit
@@ -297,6 +332,7 @@ local button = Menu.Button("Neverlose", "Test")
 | name | string | Name | + |
 | def_value | Color | Default value  | + |
 | tooltip | string | Tooltip | - |
+| callback | function | Change callback | - |
 
 ### Return value:
 
@@ -305,7 +341,33 @@ local button = Menu.Button("Neverlose", "Test")
 | value | CheatVar | Cheatvar for coloredit |
 
 ```lua
-local coloredit = Menu.ColorEdit("Neverlose", "Test", Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip")
+local coloredit = Menu.ColorEdit("Neverlose", "Test", Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip", function(val)
+    print(val)
+end)
+```
+
+## Hotkey
+
+### Parameters:
+
+| Name | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| group | string | Group | + |
+| name | string | Name | + |
+| def_value | int | Default value  | + |
+| tooltip | string | Tooltip | - |
+| callback | function | Change callback | - |
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | CheatVar | Cheatvar for hotkey |
+
+```lua
+local hotkey = Menu.Hotkey("Neverlose", "Test", Color.new(1.0, 1.0, 1.0, 1.0), "Tooltip", function(val)
+    print(val)
+end)
 ```
 
 ## GetRageHitboxState

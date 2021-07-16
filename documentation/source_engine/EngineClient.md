@@ -143,3 +143,16 @@ print(IsConnected)
 local in_game = EngineClient.IsInGame()
 print(in_game)
 ```
+
+## GetGameDirectory
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | string | Path to game directory |
+
+```lua
+local game_dir = EngineClient.GetGameDirectory()
+print(game_dir)
+```

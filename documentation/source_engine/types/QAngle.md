@@ -34,6 +34,19 @@ local my_qangle = QAngle.new()
 local my_angle = QAngle.new(1.0, 2.0, 3.0)
 ```
 
+## Normalize
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| instance | QAngle | Current instance of a QAngle |
+
+```lua
+local my_angle = QAngle.new(1.0, 2.0, 3.0)
+my_angle:Normalize()
+```
+
 ## Arithmetics:
 
 ### add

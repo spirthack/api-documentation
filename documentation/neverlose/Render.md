@@ -111,7 +111,7 @@ Render.GradientBoxFilled(Vector2.new(100, 100), Vector2.new(300, 300), Color.new
 | clr | Color | Circlecolor | + |
 | th  | float | Circle thickness | - |
 | start  | int (degree) | Circle start degree | - |
-| th  | int (degree) | Circle end degree | - |
+| end  | int (degree) | Circle end degree | - |
 
 ### Usage:
 
@@ -130,7 +130,7 @@ Render.Circle(Vector2.new(0.0, 0.0), 2.0, 30, Color.new(1.0, 1.0, 1.0, 1.0))
 | seg | int | Amount of segments | + |
 | clr | Color | Circlecolor | + |
 | start  | int (degree) | Circle start degree | - |
-| th  | int (degree) | Circle end degree | - |
+| end  | int (degree) | Circle end degree | - |
 
 ### Usage:
 
@@ -159,12 +159,13 @@ Render.Circle3D(Vector.new(0, 0, 0), 58, 10.0, Color.new(1.0, 1.0, 1.0))
 
 ### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| pos | Vector | 3-dimensional position |
-| seg | int | Amount of segments |
-| rad | float | Radius |
-| clr | Color | Circle color |
+| Name | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| pos | Vector | 3-dimensional position | + |
+| seg | int | Amount of segments | + |
+| rad | float | Radius | + |
+| clr | Color | Circle color | + |
+| border | bool | Add border | - |
 
 ### Usage:
 
@@ -184,6 +185,7 @@ Render.Circle3DFilled(Vector.new(0, 0, 0), 58, 10.0, Color.new(1.0, 1.0, 1.0))
 | size | int | Textsize | + |
 | font | Font\* | Text font | - |
 | out | bool | Text outline | - |
+| centered | bool | Text centered | - |
 
 ### Usage:
 
@@ -202,6 +204,7 @@ Render.Text("Anarchist is cute", Vector2.new(0.0, 0.0), Color.new(1.0, 1.0, 1.0,
 | clr | Color | Icon color | + |
 | size | int | Icon size | + |
 | out | bool | Icon outline | - |
+| centered | bool | Icon centered | - |
 
 ### Usage:
 
@@ -289,7 +292,7 @@ Cheat.RegisterCallback("draw", function()
 end)
 ```
 
-## ScreenPosition
+## WorldToScreen
 
 ### Parameters:
 
@@ -306,7 +309,7 @@ end)
 ### Usage:
 
 ```lua
-local screen_pos = Render.ScreenPosition(Vector.new(0, 0, 0))
+local screen_pos = Render.WorldToScreen(Vector.new(0, 0, 0))
 ```
 
 ## LoadImage
