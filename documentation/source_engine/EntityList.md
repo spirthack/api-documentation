@@ -268,7 +268,7 @@ Cheat.RegisterCallback("events", function(event)
         local attacker_player = EntityList.GetPlayerForUserID(event:GetInt("attacker", 0))
         if not attacker_player then return end
 
-        print(string.format("%s hurt by %s", attacker_player:GetName(), target_player:GetName()))
+        print(string.format("%s hurt by %s", target_player:GetName(), attacker_player:GetName()))
     end
 end)
 ```
