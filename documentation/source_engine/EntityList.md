@@ -6,15 +6,15 @@
 
 ### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| ent | int | Entity number |
+| Name | Type | Description   |
+| :--- | :--- | :------------ |
+| ent  | int  | Entity number |
 
 ### Return value:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| ent | C_BaseEntity\* | Pointer to entity |
+| Name | Type           | Description       |
+| :--- | :------------- | :---------------- |
+| ent  | C_BaseEntity\* | Pointer to entity |
 
 ```lua
 local localplayer = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
@@ -24,15 +24,15 @@ local localplayer = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
 
 ### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
+| Name               | Type | Description                      |
+| :----------------- | :--- | :------------------------------- |
 | inclNonNetworkable | bool | Include non-networkable entities |
 
 ### Return value:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| value | int | Number of entities currently in use |
+| Name  | Type | Description                         |
+| :---- | :--- | :---------------------------------- |
+| value | int  | Number of entities currently in use |
 
 ```lua
 local num_ents = EntityList.NumberOfEntities(false)
@@ -43,9 +43,9 @@ print(num_ents)
 
 ### Return value:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| value | int | Highest entity index |
+| Name  | Type | Description          |
+| :---- | :--- | :------------------- |
+| value | int  | Highest entity index |
 
 ```lua
 local highest_index = EntityList.GetHighestEntityIndex()
@@ -56,15 +56,15 @@ print(highest_index)
 
 ### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| h | unsigned long | Entity handle |
+| Name | Type          | Description   |
+| :--- | :------------ | :------------ |
+| h    | unsigned long | Entity handle |
 
 ### Return value:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| ent | C_BaseEntity\* | Pointer to entity |
+| Name | Type           | Description       |
+| :--- | :------------- | :---------------- |
+| ent  | C_BaseEntity\* | Pointer to entity |
 
 ```lua
 -- @summary: Get active weapon from weapon_handle
@@ -78,9 +78,9 @@ local weap = EntityList.GetClientEntityFromHandle(weapon_handle)
 
 ### Return value:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| Player Resource | CSPlayerResource\* | - |
+| Name            | Type               | Description |
+| :-------------- | :----------------- | :---------- |
+| Player Resource | CSPlayerResource\* | -           |
 
 ```lua
 local player_resource = EntityList.GetPlayerResource()
@@ -95,9 +95,9 @@ end
 
 ### Return value:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| Game Rules | CSGameRules\* | - |
+| Name       | Type          | Description |
+| :--------- | :------------ | :---------- |
+| Game Rules | CSGameRules\* | -           |
 
 ```lua
 local game_rules = EntityList.GetGameRules()
@@ -110,14 +110,14 @@ print(get_prop)
 ### Parameters:
 
 | Name | Type | Description |
-| :--- | :--- | :--- |
-| id | int | Class id |
+| :--- | :--- | :---------- |
+| id   | int  | Class id    |
 
 ### Return value:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| ent | C_BaseEntity\* | |
+| Name | Type           | Description   |
+| :--- | :------------- | :------------ |
+| ent  | C_BaseEntity\* | Player entity |
 
 ```lua
 local ents = EntityList.GetEntitiesByClassID(40)
@@ -128,15 +128,15 @@ print("Found " .. tostring(#ents) .. " entities with id 40")
 
 ### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
+| Name | Type   | Description |
+| :--- | :----- | :---------- |
 | name | string | Entity name |
 
 ### Return value:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| ent | C_BaseEntity\* | |
+| Name | Type           | Description   |
+| :--- | :------------- | :------------ |
+| ent  | C_BaseEntity\* | Player entity |
 
 ```lua
 local ents = EntityList.GetEntitiesByName("CCSPlayer")
@@ -147,9 +147,9 @@ print("Found " .. tostring(#ents) .. " entities with name CCSPlayer")
 
 ### Return value:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| ent | C_BasePlayer\* | Local Player entity |
+| Name | Type           | Description         |
+| :--- | :------------- | :------------------ |
+| ent  | C_BasePlayer\* | Local Player entity |
 
 ```lua
 local player = EntityList.GetLocalPlayer()
@@ -159,15 +159,15 @@ local player = EntityList.GetLocalPlayer()
 
 ### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| Index | int | Weapon Entity index |
+| Name  | Type | Description         |
+| :---- | :--- | :------------------ |
+| Index | int  | Weapon Entity index |
 
 ### Return value:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| ent | C_BaseCombatWeapon\* | Weapon entity |
+| Name | Type                 | Description   |
+| :--- | :------------------- | :------------ |
+| ent  | C_BaseCombatWeapon\* | Weapon entity |
 
 ```lua
 local player = EntityList.GetWeapon(100)
@@ -177,15 +177,15 @@ local player = EntityList.GetWeapon(100)
 
 ### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| Index | int | Weapon Entity index |
+| Name  | Type | Description         |
+| :---- | :--- | :------------------ |
+| Index | int  | Weapon Entity index |
 
 ### Return value:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| ent | C_BasePlayer\* | Player entity |
+| Name | Type           | Description   |
+| :--- | :------------- | :------------ |
+| ent  | C_BasePlayer\* | Player entity |
 
 ```lua
 local player = EntityList.GetPlayer(1)
@@ -195,15 +195,15 @@ local player = EntityList.GetPlayer(1)
 
 ### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
+| Name   | Type   | Description   |
+| :----- | :----- | :------------ |
 | handle | handle | Player Handle |
 
 ### Return value:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| ent | C_BasePlayer\* | Player entity |
+| Name | Type           | Description   |
+| :--- | :------------- | :------------ |
+| ent  | C_BasePlayer\* | Player entity |
 
 ```lua
 local player = EntityList.GetPlayerFromHandle(handle)
@@ -213,15 +213,15 @@ local player = EntityList.GetPlayerFromHandle(handle)
 
 ### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
+| Name   | Type   | Description   |
+| :----- | :----- | :------------ |
 | handle | handle | Weapon Handle |
 
 ### Return value:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| ent | C_BaseCombatWeapon\* | Weapon |
+| Name | Type                 | Description |
+| :--- | :------------------- | :---------- |
+| ent  | C_BaseCombatWeapon\* | Weapon      |
 
 ```lua
 local local_player_ptr = EntityList.GetLocalPlayer()
@@ -234,9 +234,9 @@ print(weapon_from_handle)
 
 ### Return value:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| players | table | Table with players (C_BasePlayer\*)  |
+| Name    | Type  | Description                         |
+| :------ | :---- | :---------------------------------- |
+| players | table | Table with players (C_BasePlayer\*) |
 
 ```lua
 Cheat.RegisterCallback("createmove", function()
@@ -247,6 +247,28 @@ Cheat.RegisterCallback("createmove", function()
         local player_name = player_pointer:GetName()
         print("Name:", player_name)
         ::skip::
+    end
+end)
+```
+
+## GetPlayerForUserID
+
+### Return value:
+
+| Name | Type           | Description   |
+| :--- | :------------- | :------------ |
+| ent  | C_BasePlayer\* | Player entity |
+
+```lua
+Cheat.RegisterCallback("events", function(event)
+    if event:GetName() == "player_hurt" then
+        local target_player = EntityList.GetPlayerForUserID(event:GetInt("userid", 0))
+        if not target_player then return end
+
+        local attacker_player = EntityList.GetPlayerForUserID(event:GetInt("attacker", 0))
+        if not attacker_player then return end
+
+        print(string.format("%s hurt by %s", attacker_player:GetName(), target_player:GetName()))
     end
 end)
 ```
