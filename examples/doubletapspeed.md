@@ -7,15 +7,17 @@
 > Description: `Doubletap speed`
 
 ```lua
-local speed        = Menu.SliderInt("Doubletap", "Speed", 13, 10, 16)      --    Create a new slider in our script's tab
+local sv_maxusrcmdprocessticks = g_CVar:FindVar("sv_maxusrcmdprocessticks")
 
-local ui_callback       = function()
+cheat.RegisterCallback("prediction", function()
 
-    Exploits.OverrideDoubleTapSpeed(speed:GetInt()) -- Set new double tap speed
+    sv_maxusrcmdprocessticks:SetInt(17)
+    exploits.OverrideDoubleTapSpeed(15)
 
-end
+end)
 
-
-speed:RegisterCallback(ui_callback) -- Set the menu item change callback on our checkbox
---  Now the callback will be ran whenever the item changes its value
+cheat.RegisterCallback("destroy", function()
+	sv_maxusrcmdprocessticks:SetInt(16)
+    exploits.OverrideDoubleTapSpeed(13)
+end)
 ```
