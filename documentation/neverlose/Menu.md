@@ -21,7 +21,7 @@
 | value | CheatVar\* | CheatVar value |
 
 ```lua
-local var = Menu.FindVar("Aimbot", "Ragebot", "Accuracy")
+local var = Menu.FindVar("Aimbot", "Ragebot", "Accuracy", "Hit Chance")
 print(var:Get())
 ```
 
