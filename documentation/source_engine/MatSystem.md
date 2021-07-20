@@ -135,6 +135,7 @@ Types can be (case sensetivity):
 - LocalWeapon
 - LocalHands
 - Ragdolls
+- Attachments
   {% endhint %}
 
 ```lua
