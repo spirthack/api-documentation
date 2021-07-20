@@ -21,9 +21,8 @@
 | value | CheatVar\* | CheatVar value |
 
 ```lua
-local var = Menu.FindVar("Aimbot", "Ragebot", "Accuracy", "Hit Chance", function(val)
-    print(val)
-end)
+local var = Menu.FindVar("Aimbot", "Ragebot", "Accuracy")
+print(var:Get())
 ```
 
 ## Switch
