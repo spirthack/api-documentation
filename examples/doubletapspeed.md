@@ -8,16 +8,14 @@
 
 ```lua
 local sv_maxusrcmdprocessticks = g_CVar:FindVar("sv_maxusrcmdprocessticks")
+sv_maxusrcmdprocessticks:SetInt(16)
 
 cheat.RegisterCallback("prediction", function()
-
-    sv_maxusrcmdprocessticks:SetInt(17)
-    exploits.OverrideDoubleTapSpeed(15)
-
+    exploits.OverrideDoubleTapSpeed(14)
 end)
 
 cheat.RegisterCallback("destroy", function()
-	sv_maxusrcmdprocessticks:SetInt(16)
+    sv_maxusrcmdprocessticks:SetInt(16)
     exploits.OverrideDoubleTapSpeed(13)
 end)
 ```
