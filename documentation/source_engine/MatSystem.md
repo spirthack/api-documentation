@@ -136,7 +136,8 @@ Types can be (case sensetivity):
 - LocalHands
 - Ragdolls
 - Attachments
-  {% endhint %}
+
+{% endhint %}
 
 ```lua
 MatSystem.OverrideMaterial("Enemies", mat_ptr)
