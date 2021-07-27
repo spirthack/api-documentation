@@ -20,9 +20,9 @@ end
 Cheat.RegisterCallback("events", function(event)
     if event:GetName() ~= "player_death" then return end
 
-    local me = EngineClient.GetLocalPlayer()
-    local victim = EngineClient.GetPlayerForUserId(event:GetInt("userid"))
-    local attacker = EngineClient.GetPlayerForUserId(event:GetInt("attacker"))
+    local me = EntityList.GetLocalPlayer()
+    local victim = EntityList.GetPlayerForUserID(event:GetInt("userid"))
+    local attacker = EntityList.GetPlayerForUserID(event:GetInt("attacker"))
 
     if victim == attacker or attacker ~= me then return end
 
