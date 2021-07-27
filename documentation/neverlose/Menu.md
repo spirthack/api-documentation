@@ -111,7 +111,7 @@ end)
 | def_val | int | Default value | + |
 | min | int | Minimal value | + |
 | max | int | Maximum value | + |
-| def_clr | Color | Color | - |
+| def_clr | Color | Color | + |
 | tooltip | string | Tooltip | - |
 | callback | function | Change callback | - |
 
