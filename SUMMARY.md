@@ -57,7 +57,6 @@
 - [Examples](examples/README.md)
    - [Chicken ESP](examples/chicken_esp.md)
    - [Clantag](examples/clantag.md)
-   - [Doubletapspeed](examples/doubletapspeed.md)
    - [Indicators](examples/indicators.md)
    - [Menu elements](examples/menu_elements.md)
    - [Snaplines](examples/snaplines.md)
