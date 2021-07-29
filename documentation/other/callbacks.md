@@ -45,7 +45,7 @@ and/or before ragebot/antiaims/etc, you can do it there
 | command | C_UserCmd | Createmove command |
 
 ```lua
-Cheat.RegisterCallback("pre_prediction", function(cmd)
+Cheat.RegisterCallback("prediction", function(cmd)
     AntiAim.OverridePitch(90) -- UP
 end)
 ```
@@ -61,7 +61,7 @@ CreateMove callback after cheat prediction
 | command | C_UserCmd | Createmove command |
 
 ```lua
-Cheat.RegisterCallback("pre_prediction", function(cmd)
+Cheat.RegisterCallback("createmove", function(cmd)
     print("My forwardmove is " .. tostring(cmd.forwardmove))
 end)
 ```
