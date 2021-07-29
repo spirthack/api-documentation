@@ -235,12 +235,19 @@ end)
 | :--- | :--- |
 | Network State | int |
 
-returns -1 if player is dormant and data is not available or too old,
-returns 0 if player is not dormant,
-returns 1 if player is dormant but cheat has 100% info where is player,
-returns 2 if player is dormant but we've received info from shared esp,
-returns 3 if player is dormant but updated by sounds,
-returns 4 if player is dormant and is not updated
+{% hint style="info" %}
+States:
+
+```text
+    returns -1 if player is dormant and data is not available or too old,
+    returns 0 if player is not dormant,
+    returns 1 if player is dormant but cheat has 100% info where is player,
+    returns 2 if player is dormant but we've received info from shared esp,
+    returns 3 if player is dormant but updated by sounds,
+    returns 4 if player is dormant and is not updated
+```
+
+{% endhint %}
 
 ```lua
 Cheat.RegisterCallback("createmove", function()
@@ -276,4 +283,25 @@ Cheat.RegisterCallback("createmove", function()
         ::skip::
     end
 end)
+```
+
+## GetPlayerInfo
+
+### Return value:
+
+| Name | Type |
+| :--- | :--- |
+| Player Info | PlayerInfo |
+
+```lua
+local local_player = EntityList.GetLocalPlayer()
+
+if local_player == nil then
+    return
+end
+
+local player_info = local_player:GetPlayerInfo()
+
+local SteamID32 = player_info.iSteamID
+print(SteamID32)
 ```
