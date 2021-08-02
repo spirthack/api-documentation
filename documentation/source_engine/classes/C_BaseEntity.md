@@ -133,7 +133,7 @@ local weapon = entity:GetWeapon()
 ```lua
 -- @summary: Render boxes on every player
 Cheat.RegisterCallback("draw", function()
-    local ents = Cheat.GetEntitiesByName("CCSPlayer")
+    local ents = EntityList.GetEntitiesByName("CCSPlayer")
 
     for i = 1, #ents do
         local origin = ents[i]:GetRenderOrigin()
