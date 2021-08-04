@@ -57,6 +57,7 @@ Render.PolyFilled(Color.new(1.0, 1.0, 1.0, 1.0), Vector2.new(100, 100), Vector2.
 | start | Vector2 | Startpoint of the box |
 | end | Vector2 | Endpoint of the box |
 | clr | Color | Boxcolor |
+| rounding | float | Box rounding |
 
 ### Usage:
 
@@ -73,6 +74,7 @@ Render.Box(Vector2.new(0.0, 0.0), Vector2.new(4.0, 5.0), Color.new(1.0, 1.0, 1.0
 | start | Vector2 | Startpoint of the box |
 | end | Vector2 | Endpoint of the box |
 | clr | Color | Boxcolor |
+| rounding | float | Box rounding |
 
 ### Usage:
 
@@ -379,6 +381,22 @@ local image_loaded = Render.LoadImage(bytes, image_size)
 Cheat.RegisterCallback("draw", function()
     Render.Image(image_loaded, Vector2.new(100, 100), image_size)
 end)
+```
+
+## Blur
+
+### Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| start | Vector2 | Startpoint of the blur |
+| end | Vector2 | Endpoint of the box |
+| rounding | float | Blur rounding |
+
+### Usage:
+
+```lua
+Render.BoxFilled(Vector2.new(0.0, 0.0), Vector2.new(4.0, 5.0), Color.new(1.0, 1.0, 1.0, 1.0))
 ```
 
 ## GetMenuPos
