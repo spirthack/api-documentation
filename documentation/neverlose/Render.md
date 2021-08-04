@@ -387,16 +387,16 @@ end)
 
 ### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| start | Vector2 | Startpoint of the blur |
-| end | Vector2 | Endpoint of the box |
-| rounding | float | Blur rounding |
+| Name | Type | Description | Required |
+| :--- | :--- | :--- | :--- |
+| start | Vector2 | Startpoint of the blur | + |
+| end | Vector2 | Endpoint of the box | + |
+| rounding | float | Blur rounding | - |
 
 ### Usage:
 
 ```lua
-Render.BoxFilled(Vector2.new(0.0, 0.0), Vector2.new(4.0, 5.0), Color.new(1.0, 1.0, 1.0, 1.0))
+Render.Blur(Vector2.new(0.0, 0.0), Vector2.new(4.0, 5.0))
 ```
 
 ## GetMenuPos
