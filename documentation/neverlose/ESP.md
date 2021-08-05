@@ -58,6 +58,7 @@ Possible class names:
 - local
 - weapon
 - grenade
+
 {% endhint %}
 
 ### Callback:
