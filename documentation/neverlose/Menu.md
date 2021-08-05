@@ -329,7 +329,7 @@ Menu.Text("Neverlose", "Text")
 | value | CheatVar | Cheatvar for button |
 
 ```lua
-local button = Menu.Button("Neverlose", "Test", function()
+local button = Menu.Button("Neverlose", "Test", "Tooltip",function()
     print("clicked!")
 end)
 ```
