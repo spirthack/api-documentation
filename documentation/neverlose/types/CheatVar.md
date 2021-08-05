@@ -10,8 +10,8 @@ You can access `CheatVar` instance through [Menu.FindVar](../Menu.md)
 
 ### Return value:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
+| Name  | Type                 | Description    |
+| :---- | :------------------- | :------------- |
 | value | depends on menu item | CheatVar value |
 
 ```lua
@@ -22,8 +22,8 @@ local val = var:Get()
 
 ### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
+| Name  | Type                 | Description    |
+| :---- | :------------------- | :------------- |
 | value | depends on menu item | CheatVar value |
 
 ```lua
@@ -34,8 +34,8 @@ local val = var:Set(Color.new(1.0, 1.0, 1.0, 1.0))
 
 ### Return value:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
+| Name  | Type  | Description             |
+| :---- | :---- | :---------------------- |
 | value | Color | CheatVar value as Color |
 
 ```lua
@@ -46,9 +46,9 @@ local val = var:GetColor()
 
 ### Parameters:
 
-| Name | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| value | Color | New Color value | + |
+| Name  | Type  | Description     | Required |
+| :---- | :---- | :-------------- | :------- |
+| value | Color | New Color value | +        |
 
 ```lua
 var:SetColor(Color.new(1, 1, 1, 1))
@@ -58,9 +58,9 @@ var:SetColor(Color.new(1, 1, 1, 1))
 
 ### Parameters:
 
-| Name | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| func | function | Callback | + |
+| Name | Type     | Description | Required |
+| :--- | :------- | :---------- | :------- |
+| func | function | Callback    | +        |
 
 ```lua
 var:RegisterCallback(function(val)
@@ -72,9 +72,9 @@ end)
 
 ### Parameters:
 
-| Name | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| visibility | bool | Item visibility | + |
+| Name       | Type | Description     | Required |
+| :--------- | :--- | :-------------- | :------- |
+| visibility | bool | Item visibility | +        |
 
 ```lua
 var:SetVisible(false)
@@ -83,16 +83,16 @@ var:SetVisible(false)
 ## DestroyItem
 
 {% hint style="warning" %}
-DestroyItem was previously incorrectly listed here. It has been moved to to the [Menu API](../other/menuapi.md#destroyitem)
+DestroyItem was previously incorrectly listed here. It has been moved to to the [Menu API](../Menu.md#destroyitem)
 {% endhint %}
 
 ## SetTooltip
 
 ### Parameters:
 
-| Name | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| tooltip | string | Tooltip content | + |
+| Name    | Type   | Description     | Required |
+| :------ | :----- | :-------------- | :------- |
+| tooltip | string | Tooltip content | +        |
 
 ```lua
 var:SetTooltip("Tooltip")
@@ -102,8 +102,8 @@ var:SetTooltip("Tooltip")
 
 ### Return value:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
+| Name | Type   | Description             |
+| :--- | :----- | :---------------------- |
 | name | string | Returns CheatVar's name |
 
 ```lua
@@ -117,8 +117,8 @@ print(name)
 
 ### Parameters:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
+| Name     | Type  | Description |
+| :------- | :---- | :---------- |
 | elements | table | Combo Items |
 
 ```lua
@@ -132,8 +132,8 @@ end)
 
 ### Return value:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
+| Name     | Type  | Description                   |
+| :------- | :---- | :---------------------------- |
 | elements | table | Returns all elements in combo |
 
 ```lua
