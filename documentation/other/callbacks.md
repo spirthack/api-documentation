@@ -1,7 +1,7 @@
 # Callbacks
 
 {% hint style="info" %}
-To register a callback, you can call [Cheat.RegisterCallback](../classes/Cheat.md#registercallback) function.
+To register a callback, you can call [Cheat.RegisterCallback](../neverlose/Cheat.md#registercallback) function.
 {% endhint %}
 
 ## List of all callbacks:
@@ -23,8 +23,8 @@ and/or ragebot/antiaims/etc, you can do it there
 
 ### Parameters passed in callback:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
+| Name    | Type      | Description        |
+| :------ | :-------- | :----------------- |
 | command | C_UserCmd | Createmove command |
 
 ```lua
@@ -40,8 +40,8 @@ and/or before ragebot/antiaims/etc, you can do it there
 
 ### Parameters passed in callback:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
+| Name    | Type      | Description        |
+| :------ | :-------- | :----------------- |
 | command | C_UserCmd | Createmove command |
 
 ```lua
@@ -56,8 +56,8 @@ CreateMove callback after cheat prediction
 
 ### Parameters passed in callback:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
+| Name    | Type      | Description        |
+| :------ | :-------- | :----------------- |
 | command | C_UserCmd | Createmove command |
 
 ```lua
@@ -72,9 +72,9 @@ This callback will be executed whenever new game event will be executed
 
 ### Parameters passed in callback:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| event | IGameEvent | Event |
+| Name  | Type       | Description |
+| :---- | :--------- | :---------- |
+| event | IGameEvent | Event       |
 
 {% hint style="info" %}
 A list of events can be found [here](https://wiki.alliedmods.net%20Counter-Strike:_Global_Offensive_Events).
@@ -104,8 +104,8 @@ This callback will be executed on every frame stage.
 
 ### Parameters passed in callback:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
+| Name  | Type   | Description  |
+| :---- | :----- | :----------- |
 | stage | number | Stage number |
 
 {% hint style="info" %}
@@ -125,9 +125,9 @@ This callback will be executed whenever the user enters something into the conso
 
 ### Parameters passed in callback:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| text | string | Text |
+| Name | Type   | Description |
+| :--- | :----- | :---------- |
+| text | string | Text        |
 
 ```lua
 Cheat.RegisterCallback("console", function(text)
@@ -141,8 +141,8 @@ This callback will be executed whenever server registers ragebot shot
 
 ### Parameters passed in callback:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
+| Name | Type           | Description            |
+| :--- | :------------- | :--------------------- |
 | shot | RegisteredShot | Information about shot |
 
 ```lua
@@ -157,8 +157,8 @@ This callback will be executed whenever ragebot shoot
 
 ### Parameters passed in callback:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
+| Name | Type        | Description            |
+| :--- | :---------- | :--------------------- |
 | shot | RagebotShot | Information about shot |
 
 ```lua
@@ -173,8 +173,8 @@ This callback will be executed when other players shooting
 
 ### Parameters passed in callback:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
+| Name | Type           | Description              |
+| :--- | :------------- | :----------------------- |
 | shot | DT_FireBullets | Information about bullet |
 
 ```lua
@@ -189,9 +189,9 @@ This callback will be executed when game is calculating view
 
 ### Parameters passed in callback:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| setup | CViewSetup | View setup |
+| Name  | Type       | Description |
+| :---- | :--------- | :---------- |
+| setup | CViewSetup | View setup  |
 
 ```lua
 Cheat.RegisterCallback("override_view", function(setup)
