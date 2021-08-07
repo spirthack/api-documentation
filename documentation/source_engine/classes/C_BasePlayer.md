@@ -39,7 +39,7 @@ Cheat.RegisterCallback("draw", function()
 end)
 ```
 
-## GetClassId
+## GetClassID
 
 ### Return value:
 
@@ -50,8 +50,8 @@ end)
 ```lua
 local entity = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
 local player = entity:GetPlayer()
-local class_id = player:GetClassId()
-print(GetClassId)
+local class_id = player:GetClassID()
+print(class_id)
 ```
 
 ## EntIndex

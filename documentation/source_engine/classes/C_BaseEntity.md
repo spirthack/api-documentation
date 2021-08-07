@@ -2,7 +2,7 @@
 
 ## Functions
 
-## GetClassId
+## GetClassID
 
 ### Return value:
 
@@ -12,7 +12,7 @@
 
 ```lua
 local localplayer = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
-local classid = localplayer:GetClassId()
+local classid = localplayer:GetClassID()
 print(classid)
 ```
 

@@ -370,6 +370,7 @@ end)
 | pos | Vector2 | Position | + |
 | size | Vector2 | Image Size | + |
 | Color | Color | Image Color modulation | - |
+| rounding | float | Image Rounding | - |
 
 ### Usage:
 
@@ -391,6 +392,7 @@ end)
 | :--- | :--- | :--- | :--- |
 | start | Vector2 | Startpoint of the blur | + |
 | end | Vector2 | Endpoint of the box | + |
+| Color | Color | Blur modulation | - |
 | rounding | float | Blur rounding | - |
 
 ### Usage:
