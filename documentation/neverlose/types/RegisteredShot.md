@@ -1,7 +1,7 @@
 # RegisteredShot
 
 {% hint style="info" %}
-You can access `RegisteredShot` instance through `ragebot_shot` [callback](../other/callbacks.md)
+You can access `RegisteredShot` instance through `ragebot_shot` [callback](../../other/callbacks.md)
 {% endhint %}
 
 {% hint style="info" %}
@@ -17,12 +17,12 @@ Miss reasons:
 
 ## Fields:
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| hitchance | int | Chance to hit target |
-| backtrack | int | How many ticks was backtracked |
-| hitgroup | int | HitGroup |
-| damage | int | Damage |
-| target_index | int | Target ent index |
-| reason | int | Miss reason |
-| spread_degree | float | Spread angle |
+| Name          | Type  | Description                    |
+| :------------ | :---- | :----------------------------- |
+| hitchance     | int   | Chance to hit target           |
+| backtrack     | int   | How many ticks was backtracked |
+| hitgroup      | int   | HitGroup                       |
+| damage        | int   | Damage                         |
+| target_index  | int   | Target ent index               |
+| reason        | int   | Miss reason                    |
+| spread_degree | float | Spread angle                   |
