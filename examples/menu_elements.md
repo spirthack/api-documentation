@@ -11,9 +11,9 @@ local our_checkbox      = Menu.Switch("neverlose.cc", "Toggle me!", false)      
 local our_slider        = Menu.SliderInt("neverlose.cc", "Slide me!", 50, 0, 100)      --    Create a new slider in our script's tab
 
 local ui_callback       = function()
-    local new_state     = our_checkbox:GetBool()    --  The new value of our checkbox
+    local new_state     = our_checkbox:Get()    --  The new value of our checkbox
 
-    print("Our new value is "..tostring(our_checkbox:GetBool()))
+    print("Our new value is "..tostring(our_checkbox:Get()))
 
     our_slider:SetVisible(new_state)                --  If our checkbox is enabled, the slider will be visible
                                                     --  If our checkbox is disabled, the slider won't be visible
