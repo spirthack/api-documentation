@@ -44,8 +44,8 @@ local my_vec2 = Vector2.new(1.0, 2.0)
 #### Usage:
 
 ```lua
-local vec1 = Vector.new(1.0, 2.0)
-local vec2 = Vector.new(3.0, 2.0)
+local vec1 = Vector2.new(1.0, 2.0)
+local vec2 = Vector2.new(3.0, 2.0)
 local add = vec1 + vec2
 -- Expected value of add: Vec(4.0, 4.0)
 ```
@@ -55,8 +55,8 @@ local add = vec1 + vec2
 #### Usage:
 
 ```lua
-local vec1 = Vector.new(4.0, 2.0)
-local vec2 = Vector.new(2.0, 1.0)
+local vec1 = Vector2.new(4.0, 2.0)
+local vec2 = Vector2.new(2.0, 1.0)
 local sub = vec1 - vec2
 -- Expected value of sub: Vec(2.0, 1.0)
 ```
@@ -66,8 +66,8 @@ local sub = vec1 - vec2
 #### Usage:
 
 ```lua
-local vec1 = Vector.new(1.0, 2.0)
-local vec2 = Vector.new(3.0, 2.0)
+local vec1 = Vector2.new(1.0, 2.0)
+local vec2 = Vector2.new(3.0, 2.0)
 local mul = vec1 * vec2
 -- Expected value of mul: Vec(3.0, 4.0)
 ```
@@ -77,8 +77,8 @@ local mul = vec1 * vec2
 #### Usage:
 
 ```lua
-local vec1 = Vector.new(6.0, 2.0)
-local vec2 = Vector.new(3.0, 2.0)
+local vec1 = Vector2.new(6.0, 2.0)
+local vec2 = Vector2.new(3.0, 2.0)
 local div = vec1 / vec2
 -- Expected value of div: Vec(2.0, 1.0)
 ```
@@ -88,7 +88,7 @@ local div = vec1 / vec2
 #### Usage:
 
 ```lua
-local vec1 = Vector.new(1.0, 2.0)
+local vec1 = Vector2.new(1.0, 2.0)
 local len = #vec1
 -- Expected value of len: sqrt(1^2 + 2^2) = 2.2360
 ```
@@ -104,7 +104,7 @@ local len = #vec1
 #### Usage:
 
 ```lua
-local my_vec = Vector.new(3.0, 2.0)
+local my_vec = Vector2.new(3.0, 2.0)
 local length = my_vec:Length()
 ```
 
