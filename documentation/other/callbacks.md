@@ -147,7 +147,7 @@ This callback will be executed whenever server registers ragebot shot
 
 ```lua
 Cheat.RegisterCallback("registered_shot", function(shot)
-    print("[SHOT] hc: " .. tostring(shot.hitchange) .. " | backtrack: " .. tostring(shot.backtrack) .. " | hitgroup: " .. tostring(shot.hitgroup) .. " | damage: " .. tostring(shot.damage) .. " | target: " .. tostring(shot.target_index))
+    print("[SHOT] hc: " .. tostring(shot.hitchance) .. " | backtrack: " .. tostring(shot.backtrack) .. " | hitgroup: " .. tostring(shot.hitgroup) .. " | damage: " .. tostring(shot.damage) .. " | target: " .. tostring(shot.target_index))
 end)
 ```
 
@@ -163,7 +163,7 @@ This callback will be executed whenever ragebot shoot
 
 ```lua
 Cheat.RegisterCallback("ragebot_shot", function(shot)
-    print("[SHOT] hc: " .. tostring(shot.hitchange) .. " | backtrack: " .. tostring(shot.backtrack) .. " | hitgroup: " .. tostring(shot.hitgroup) .. " | damage: " .. tostring(shot.damage) .. " | target: " .. tostring(shot.target_index))
+    print("[SHOT] hc: " .. tostring(shot.hitchance) .. " | backtrack: " .. tostring(shot.backtrack) .. " | hitgroup: " .. tostring(shot.hitgroup) .. " | damage: " .. tostring(shot.damage) .. " | target: " .. tostring(shot.target_index))
 end)
 ```
 
