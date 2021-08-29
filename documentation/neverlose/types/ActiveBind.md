@@ -41,3 +41,27 @@ bind:GetValue()
 ```lua
 bind:IsActive()
 ```
+
+## GetKey
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | int | keybind key |
+
+```lua
+bind:GetKey()
+```
+
+## GetMode
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | int | Key bind mode (1 for hold, 0 for toggle) |
+
+```lua
+bind:GetMode()
+```
