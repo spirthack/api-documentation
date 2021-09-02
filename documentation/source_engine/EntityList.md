@@ -6,9 +6,9 @@
 
 ### Parameters:
 
-| Name | Type | Description   |
-| :--- | :--- | :------------ |
-| ent  | int  | Entity number |
+| Name | Type | Description  |
+| :--- | :--- | :----------- |
+| ent  | int  | Entity index |
 
 ### Return value:
 
@@ -177,9 +177,9 @@ local player = EntityList.GetWeapon(100)
 
 ### Parameters:
 
-| Name  | Type | Description         |
-| :---- | :--- | :------------------ |
-| Index | int  | Weapon Entity index |
+| Name  | Type | Description  |
+| :---- | :--- | :----------- |
+| Index | int  | Entity index |
 
 ### Return value:
 
