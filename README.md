@@ -8,8 +8,6 @@
 
 ## Other helpful information
 
-Official nl scripting discord server: [Join](https://discord.gg/Av2HrNPMWb)
-
 Scripts stored in (csgo folder)/nl (for example,
 `C:\program files (x86)\steam\steamapps\common\Counter-Strike Global Offensive\nl`)
 
