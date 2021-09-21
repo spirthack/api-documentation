@@ -223,7 +223,7 @@ print(is_teammate)
 Cheat.RegisterCallback("draw", function()
     local entity = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
     local player = entity:GetPlayer()
-    player:DrawHitbox(3, Color.new(1, 1, 1, 1), g_GlobalVars.tickcount-1)
+    player:DrawHitbox(3, Color.new(1, 1, 1, 1), GlobalVars.tickcount-1)
 end)
 ```
 
