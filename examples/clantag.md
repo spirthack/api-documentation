@@ -54,7 +54,7 @@ local clantag_animation = function()
     local netchann_info = EngineClient.GetNetChannelInfo()
     if netchann_info == nil then return end
 
-    local latency = netchann_info:GetLatency(0) / g_GlobalVars.interval_per_tick
+    local latency = netchann_info:GetLatency(0) / GlobalVars.interval_per_tick
     local tickcount_pred = GlobalVars.tickcount + latency
     local iter = math.floor(math.fmod(tickcount_pred / 16, #tag + 1) + 1)
 
