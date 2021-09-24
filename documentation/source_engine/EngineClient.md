@@ -156,3 +156,41 @@ print(in_game)
 local game_dir = EngineClient.GetGameDirectory()
 print(game_dir)
 ```
+
+## GetLastTimestamp
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | int | Last timestamp |
+
+```lua
+local timestamp = EngineClient.GetLastTimestamp()
+print(timestamp)
+```
+
+## GetProductVersionString
+
+### Return value:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | string | CS:GO version |
+
+```lua
+local ver = EngineClient.GetProductVersionString()
+print(ver)
+```
+
+## SetViewAngles
+
+### Parameters:
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| value | QAngle | New angles |
+
+```lua
+EngineClient.SetViewAngles(QAngle.new(20, 20, 0))
+```
