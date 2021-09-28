@@ -22,7 +22,6 @@ local weap = me:GetActiveWeapon()
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| table | string | Netvar table |
 | name | string | Netvar name |
 
 ### Return value:
@@ -38,8 +37,8 @@ if not weap:IsGrenade() then
     return -- filter out the entities which is not a grenade
 end
 
-local m_bPinPulled = weap:GetProp("DT_BaseCSGrenade", "m_bPinPulled") -- is grenade's pin is pulled on or not
-local m_fThrowTime = weap:GetProp("DT_BaseCSGrenade", "m_fThrowTime") -- get grenade throw time
+local m_bPinPulled = weap:GetProp("m_bPinPulled") -- is grenade's pin is pulled on or not
+local m_fThrowTime = weap:GetProp("m_fThrowTime") -- get grenade throw time
 
 if m_bPinPulled then
     return
@@ -56,13 +55,12 @@ end
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| table | string | Netvar table |
 | name | string | Netvar name |
 | value | Netvar dependant | Netvar value |
 | array index | int | Index in array |
 
 ```lua
-weap:SetProp("DT_BaseCSGrenade", "m_bPinPulled", true)
+weap:SetProp("m_bPinPulled", true)
 ```
 
 ## GetClassId
