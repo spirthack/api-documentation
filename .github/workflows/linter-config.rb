@@ -24,5 +24,5 @@ rule 'MD009', :br_spaces => 2
 # Don't enforce line length in code blocks and tables
 rule 'MD013', :line_length => 120, :code_blocks => false, :tables => false
 
-# Don't force ordered lists with 1. 1. 1.
+# Force ordered lists with 1. 1. 1.
 rule 'MD029', :style => :ordered
