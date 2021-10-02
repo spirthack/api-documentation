@@ -8,6 +8,8 @@
 
 ## Other helpful information
 
+Our LUA Scripting [Discord](https://discord.gg/wtzfXrUzBv).
+
 Scripts stored in (csgo folder)/nl (for example,
 `C:\program files (x86)\steam\steamapps\common\Counter-Strike Global Offensive\nl`)
 
