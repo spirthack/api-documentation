@@ -1,7 +1,7 @@
 # CViewSetup
 
 {% hint style="info" %}
-You can access `CViewSetup` instance through `override_view` [callback](../../other/callbacks.md)
+You can access `CViewSetup` instance through `override_view` [callback](../tables/callbacks.md)
 {% endhint %}
 
 ## Fields:

@@ -1,7 +1,7 @@
 # ActiveBind
 
 {% hint style="info" %}
-You can access `ActiveBind` instance through `GetBinds` [function](../Cheat.md)
+You can access `ActiveBind` instance through `GetBinds` [function](../tables/Cheat.md)
 {% endhint %}
 
 ## Functions

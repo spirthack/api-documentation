@@ -1,7 +1,7 @@
 # CheatVar
 
 {% hint style="info" %}
-You can access `CheatVar` instance through [Menu.FindVar](../Menu.md)
+You can access `CheatVar` instance through [Menu.FindVar](../tables/Menu.md)
 {% endhint %}
 
 ## Functions
@@ -83,20 +83,8 @@ var:SetVisible(false)
 ## DestroyItem
 
 {% hint style="warning" %}
-DestroyItem was previously incorrectly listed here. It has been moved to to the [Menu API](../Menu.md#destroyitem)
+DestroyItem was previously incorrectly listed here. It has been moved to to the [Menu API](../tables/Menu.md#destroyitem)
 {% endhint %}
-
-## SetTooltip
-
-### Parameters:
-
-| Name    | Type   | Description     | Required |
-| :------ | :----- | :-------------- | :------- |
-| tooltip | string | Tooltip content | +        |
-
-```lua
-var:SetTooltip("Tooltip")
-```
 
 ## GetName
 
@@ -122,7 +110,7 @@ print(name)
 | elements | table | Combo Items |
 
 ```lua
-local combo = Menu.Combo("Neverlose", "Combo", {"Element 1", "Element 2", "Element 3"}, 0, "Tooltip")
+local combo = Menu.Combo("Neverlose", "Combo", {"Element 1", "Element 2", "Element 3"}, 0)
 Menu.Button("neverlose", "update"):RegisterCallback(function()
     combo:UpdateList({"el1", "el2"})
 end)

@@ -1,17 +1,5 @@
 # Cheat
 
-## ESP API
-
-{% hint style="info" %}
-You can create your own ESP elements. More info can be found [here](ESP.md).
-{% endhint %}
-
-## Menu API
-
-{% hint style="info" %}
-You can create your menu elements. More info can be found [here](Menu.md).
-{% endhint %}
-
 ## Functions
 
 ## RegisterCallback
@@ -24,36 +12,13 @@ You can create your menu elements. More info can be found [here](Menu.md).
 | callback | function | Callback |
 
 {% hint style="info" %}
-You can view callbacks list [here](../other/callbacks.md).
+You can view callbacks list [here](callbacks.md).
 {% endhint %}
 
 ```lua
 Cheat.RegisterCallback("draw", function()
     Render.Text("Hello world, it's me", Vector2.new(10.0, 15.0), Color.new(1.0, 1.0, 1.0), 16)
 end)
-```
-
-## FireBullet
-
-### Simulates bullet with wall penetrating
-
-### Parameters:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| attacker | C_BasePlayer | Attacker |
-| start | Vector | Simluation start pos |
-| end | Vector | Simluation end pos |
-
-### Return value:
-
-| Name | Type |
-| :--- | :--- |
-| Fire Bullet Info | firebullet_t |
-
-```lua
-local trace = Cheat.FireBullet(player, Vector.new(0.0, 0.0, 0.0), Vector.new(1.0, 1.0, 1.0))
-print(trace.damage)
 ```
 
 ## AngleToForward
@@ -144,7 +109,7 @@ local is_key_pressed = Cheat.IsKeyDown(0x1)
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| name | string | Neverlose's account username |
+| name | string | Spirthack's account username |
 
 ```lua
 local username = Cheat.GetCheatUserName()
@@ -164,29 +129,4 @@ print("Name", "isActive", "Value")
 for i = 1, #binds do
     print(binds[i]:GetName(), binds[i]:IsActive(), binds[i]:GetValue())
 end
-```
-
-## AddEvent
-
-### Parameters:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| name | string | Event name |
-
-```lua
-Cheat.AddEvent("Greetings from neverlose.cc!")
-```
-
-## AddNotify
-
-### Parameters:
-
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| title | string | Notification title |
-| name | string | Notification name |
-
-```lua
-Cheat.AddNotify("neverlose.cc", "Greetings from elleqt!")
 ```

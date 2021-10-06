@@ -384,23 +384,6 @@ Cheat.RegisterCallback("draw", function()
 end)
 ```
 
-## Blur
-
-### Parameters:
-
-| Name | Type | Description | Required |
-| :--- | :--- | :--- | :--- |
-| start | Vector2 | Startpoint of the blur | + |
-| end | Vector2 | Endpoint of the box | + |
-| Color | Color | Blur modulation | - |
-| rounding | float | Blur rounding | - |
-
-### Usage:
-
-```lua
-Render.Blur(Vector2.new(0.0, 0.0), Vector2.new(4.0, 5.0))
-```
-
 ## GetMenuPos
 
 ### Return value:

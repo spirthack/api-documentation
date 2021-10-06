@@ -1,7 +1,7 @@
 # CUserCmd
 
 {% hint style="info" %}
-You can access `CUserCmd` instance through `pre_prediction/prediction/createmove` [callback](../other/callbacks.md)
+You can access `CUserCmd` instance through `pre_prediction/prediction/createmove` [callback](../tables/callbacks.md)
 {% endhint %}
 
 ## Fields:

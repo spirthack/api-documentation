@@ -70,7 +70,7 @@ print(highest_index)
 -- @summary: Get active weapon from weapon_handle
 -- @hint: You can use GetActiveWeapon instead
 local me = EntityList.GetClientEntity(EngineClient.GetLocalPlayer())
-local weapon_handle = me:GetProp("DT_BaseCombatCharacter", "m_hActiveWeapon")
+local weapon_handle = me:GetProp("m_hActiveWeapon")
 local weap = EntityList.GetClientEntityFromHandle(weapon_handle)
 ```
 
@@ -84,7 +84,7 @@ local weap = EntityList.GetClientEntityFromHandle(weapon_handle)
 
 ```lua
 local player_resource = EntityList.GetPlayerResource()
-local get_prop = player_resource:GetProp("DT_CSPlayerResource", "m_szClan")
+local get_prop = player_resource:GetProp("m_szClan")
 
 for key, value in pairs(get_prop) do
     print(key, value)
@@ -101,7 +101,7 @@ end
 
 ```lua
 local game_rules = EntityList.GetGameRules()
-local get_prop = game_rules:GetProp("DT_CSGameRulesProxy", "m_bIsValveDS")
+local get_prop = game_rules:GetProp("m_bIsValveDS")
 print(get_prop)
 ```
 
@@ -225,7 +225,7 @@ local player = EntityList.GetPlayerFromHandle(handle)
 
 ```lua
 local local_player_ptr = EntityList.GetLocalPlayer()
-local active_weapon = local_player_ptr:GetProp("DT_BaseCombatCharacter", "m_hActiveWeapon")
+local active_weapon = local_player_ptr:GetProp("m_hActiveWeapon")
 local weapon_from_handle = EntityList.GetWeaponFromHandle(active_weapon)
 print(weapon_from_handle)
 ```

@@ -2,13 +2,13 @@
 
 > Author: [@elleqt](https://github.com/elleqt)
 >
-> Name: `Neverlose Watermark`
+> Name: `Example Watermark`
 >
 > Description: `Watermark`
 
 ```lua
 local username = Cheat.GetCheatUserName()
-local text = "neverlose.cc | " .. username
+local text = "spirthack | " .. username
 local textSize = Render.CalcTextSize(text, 12)
 local position = Vector2.new(20, 15)
 local indent = Vector2.new(10, 5)

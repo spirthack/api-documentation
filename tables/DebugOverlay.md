@@ -19,7 +19,7 @@
 | duration | float |  |
 
 ```lua
-DebugOverlay.AddBoxOverlay(Vector.new(1, 2, 3), Vector.new(4, 5, 6), Vector.new(6, 7, 8), QAngle.new(9, 10, 11), 255, 255, 255, 255, 1.0)
+DebugOverlay.AddBoxOverlay(Vector.new(1, 2, 3), Vector.new(4, 5, 6), Vector.new(6, 7, 8), QAngle.new(9, 10, 11), 255, 255, 255, 255, false, 1.0)
 ```
 
 ## AddSphereOverlay
@@ -39,7 +39,7 @@ DebugOverlay.AddBoxOverlay(Vector.new(1, 2, 3), Vector.new(4, 5, 6), Vector.new(
 | flDuration | float |  |
 
 ```lua
-DebugOverlay.AddSphereOverlay(Vector.new(1, 2, 3), 1.0, 10, 10, 255, 255, 255, 255, 1.0)
+DebugOverlay.AddSphereOverlay(Vector.new(1, 2, 3), 1.0, 10, 10, 255, 255, 255, 255, false, 1.0)
 ```
 
 ## AddTriangleOverlay
@@ -59,7 +59,7 @@ DebugOverlay.AddSphereOverlay(Vector.new(1, 2, 3), 1.0, 10, 10, 255, 255, 255, 2
 | duration | float |  |
 
 ```lua
-DebugOverlay.AddTriangleOverlay(Vector.new(1, 2, 3), Vector.new(4, 5, 6), Vector.new(7, 8, 9), 255, 255, 255, 255, 1.0)
+DebugOverlay.AddTriangleOverlay(Vector.new(1, 2, 3), Vector.new(4, 5, 6), Vector.new(7, 8, 9), 255, 255, 255, 255, false, 1.0)
 ```
 
 ## AddLineOverlay
@@ -77,7 +77,7 @@ DebugOverlay.AddTriangleOverlay(Vector.new(1, 2, 3), Vector.new(4, 5, 6), Vector
 | duration | float |  |
 
 ```lua
-DebugOverlay.AddLineOverlay(Vector.new(1, 2, 3), Vector.new(4, 5, 6), 255, 255, 255, 1.0)
+DebugOverlay.AddLineOverlay(Vector.new(1, 2, 3), Vector.new(4, 5, 6), 255, 255, 255, false, 1.0)
 ```
 
 ## AddCapsuleOverlay
@@ -93,7 +93,6 @@ DebugOverlay.AddLineOverlay(Vector.new(1, 2, 3), Vector.new(4, 5, 6), 255, 255, 
 | g | int |  |
 | b | int |  |
 | a | int |  |
-| noDepthTest | bool |  |
 | duration | float |  |
 
 ```lua

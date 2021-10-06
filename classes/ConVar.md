@@ -1,7 +1,7 @@
 # ConVar
 
 {% hint style="info" %}
-You can access `ConVar` instance through [CVar](../CVar.md)
+You can access `ConVar` instance through [CVar](../tables/CVar.md)
 {% endhint %}
 
 ## Functions

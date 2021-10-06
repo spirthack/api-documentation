@@ -1,7 +1,7 @@
 # CGameRules
 
 {% hint style="info" %}
-You can access GameRules class through [EntityList.GetGameRules](../EntityList.md)
+You can access GameRules class through [EntityList.GetGameRules](../tables/EntityList.md)
 {% endhint %}
 
 ## Functions

@@ -1,7 +1,7 @@
 # Callbacks
 
 {% hint style="info" %}
-To register a callback, you can call [Cheat.RegisterCallback](../neverlose/Cheat.md#registercallback) function.
+To register a callback, you can call [Cheat.RegisterCallback](Cheat.md#registercallback) function.
 {% endhint %}
 
 ## List of all callbacks:
@@ -109,7 +109,7 @@ This callback will be executed on every frame stage.
 | stage | number | Stage number |
 
 {% hint style="info" %}
-A list of stages can be found [here](source_engine_enums.md#stages).
+A list of stages can be found [here](../other/source_engine_enums.md#frame-stages).
 {% endhint %}
 
 ```lua
@@ -132,54 +132,6 @@ This callback will be executed whenever the user enters something into the conso
 ```lua
 Cheat.RegisterCallback("console", function(text)
     print("Input text was: '" .. text .. "'")
-end)
-```
-
-## `registered_shot`
-
-This callback will be executed whenever server registers ragebot shot
-
-### Parameters passed in callback:
-
-| Name | Type           | Description            |
-| :--- | :------------- | :--------------------- |
-| shot | RegisteredShot | Information about shot |
-
-```lua
-Cheat.RegisterCallback("registered_shot", function(shot)
-    print("[SHOT] hc: " .. tostring(shot.hitchance) .. " | backtrack: " .. tostring(shot.backtrack) .. " | hitgroup: " .. tostring(shot.hitgroup) .. " | damage: " .. tostring(shot.damage) .. " | target: " .. tostring(shot.target_index))
-end)
-```
-
-## `ragebot_shot`
-
-This callback will be executed whenever ragebot shoot
-
-### Parameters passed in callback:
-
-| Name | Type        | Description            |
-| :--- | :---------- | :--------------------- |
-| shot | RagebotShot | Information about shot |
-
-```lua
-Cheat.RegisterCallback("ragebot_shot", function(shot)
-    print("[SHOT] hc: " .. tostring(shot.hitchance) .. " | backtrack: " .. tostring(shot.backtrack) .. " | hitgroup: " .. tostring(shot.hitgroup) .. " | damage: " .. tostring(shot.damage) .. " | target: " .. tostring(shot.target_index))
-end)
-```
-
-## `fire_bullet`
-
-This callback will be executed when other players shooting
-
-### Parameters passed in callback:
-
-| Name | Type           | Description              |
-| :--- | :------------- | :----------------------- |
-| shot | DT_FireBullets | Information about bullet |
-
-```lua
-Cheat.RegisterCallback("fire_bullet", function(bullet)
-    print(tostring(bullet.m_iPlayer) .. " is shooting")
 end)
 ```
 

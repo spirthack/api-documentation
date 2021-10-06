@@ -1,7 +1,7 @@
 # PlayerInfo
 
 {% hint style="info" %}
-You can access `PlayerInfo` instance through `GetPlayerInfo` [function](../EngineClient.md)
+You can access `PlayerInfo` instance through `GetPlayerInfo` [function](../tables/EngineClient.md)
 {% endhint %}
 
 ## Fields

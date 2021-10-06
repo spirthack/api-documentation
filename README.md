@@ -8,10 +8,8 @@
 
 ## Other helpful information
 
-Our LUA Scripting [Discord](https://discord.gg/wtzfXrUzBv).
-
-Scripts stored in (csgo folder)/nl (for example,
-`C:\program files (x86)\steam\steamapps\common\Counter-Strike Global Offensive\nl`)
+Scripts stored in (csgo folder)/spirt (for example,
+`C:\SteamLibrary\steamapps\common\Counter-Strike Global Offensive\spirt`)
 
 You can edit scripts with any editor you want, cheat will sync scripts automatically
 
@@ -21,7 +19,5 @@ Small LUA guide we recommend for new developers: [Learn LUA](http://tylerneylon.
 
 Feel free to contact us:
 
-- [Issues](https://github.com/neverlosecc/api-documentation/issues)
-- [Pull Requests](https://github.com/neverlosecc/api-documentation/pulls)
-- Personal messages to any of documentation maintainer:
-  - elleqt#9945
+- [Issues (ссылку сюда актуал вставьте)](https://github.com/neverlosecc/api-documentation/issues)
+- [Pull Requests (ссылку сюда актуал вставьте)](https://github.com/neverlosecc/api-documentation/pulls)
