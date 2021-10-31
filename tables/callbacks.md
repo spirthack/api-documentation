@@ -77,7 +77,7 @@ This callback will be executed whenever new game event will be executed
 | event | IGameEvent | Event       |
 
 {% hint style="info" %}
-A list of events can be found [here](https://wiki.alliedmods.net%20Counter-Strike:_Global_Offensive_Events).
+A list of events can be found [here](https://wiki.alliedmods.net/Counter-Strike:_Global_Offensive_Events).
 {% endhint %}
 
 ```lua
