@@ -31,7 +31,6 @@ print(var:Get())
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| tab | string | Tab name | - |
 | group | string | Group | + |
 | name | string | Name | + |
 | def_val | bool | Default value | + |
@@ -55,7 +54,6 @@ end)
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| tab | string | Tab name | - |
 | group | string | Group | + |
 | name | string | Name | + |
 | def_val | bool | Default value | + |
@@ -80,7 +78,6 @@ end)
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| tab | string | Tab name | - |
 | group | string | Group | + |
 | name | string | Name | + |
 | def_val | int | Default value | + |
@@ -106,7 +103,6 @@ end)
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| tab | string | Tab name | - |
 | group | string | Group | + |
 | name | string | Name | + |
 | def_val | int | Default value | + |
@@ -133,7 +129,6 @@ end)
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| tab | string | Tab name | - |
 | group | string | Group | + |
 | name | string | Name | + |
 | def_val | float | Default value | + |
@@ -159,7 +154,6 @@ end)
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| tab | string | Tab name | - |
 | group | string | Group | + |
 | name | string | Name | + |
 | def_val | float | Default value | + |
@@ -186,7 +180,6 @@ end)
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| tab | string | Tab name | - |
 | group | string | Group | + |
 | name | string | Name | + |
 | elements | table | Elements | + |
@@ -211,7 +204,6 @@ end)
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| tab | string | Tab name | - |
 | group | string | Group | + |
 | name | string | Name | + |
 | elements | table | Elements | + |
@@ -237,7 +229,6 @@ end)
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| tab | string | Tab name | - |
 | group | string | Group | + |
 | name | string | Name | + |
 | elements | table | Values | + |
@@ -267,7 +258,6 @@ combo:SetBool(1, true)
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| tab | string | Tab name | - |
 | group | string | Group | + |
 | name | string | Name | + |
 | max_size | size_t | Max size | + |
@@ -292,7 +282,6 @@ end)
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| tab | string | Tab name | - |
 | group | string | Group | + |
 | name | string | Name | + |
 
@@ -306,7 +295,6 @@ Menu.Text("spirthack", "Text")
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| tab | string | Tab name | - |
 | group | string | Group | + |
 | name | string | Name | + |
 | callback | function | Click callback | - |
@@ -329,7 +317,6 @@ end)
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| tab | string | Tab name | - |
 | group | string | Group | + |
 | name | string | Name | + |
 | def_value | Color | Default value  | + |
@@ -353,7 +340,6 @@ end)
 
 | Name | Type | Description | Required |
 | :--- | :--- | :--- | :--- |
-| tab | string | Tab name | - |
 | group | string | Group | + |
 | name | string | Name | + |
 | def_value | int | Default value  | + |
