@@ -46,7 +46,7 @@ and/or before ragebot/antiaims/etc, you can do it there
 
 ```lua
 Cheat.RegisterCallback("prediction", function(cmd)
-    AntiAim.OverridePitch(90) -- UP
+    cmd.viewangles.pitch = -90 -- UP
 end)
 ```
 
