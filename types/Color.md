@@ -39,7 +39,7 @@ local clr = Color.new()
 local my_clr = Color.new(1.0, 1.0, 1.0)
 ```
 
-## RGBA
+## new
 
 ### Parameters:
 
@@ -57,7 +57,7 @@ local my_clr = Color.new(1.0, 1.0, 1.0)
 | instance | Color | New instance of a Color |
 
 ```lua
-local my_clr = Color.RGBA(255, 100, 255, 255)
+local my_clr = Color.new(255, 100, 255, 255)
 ```
 
 ## HSLA
